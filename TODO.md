@@ -18,7 +18,7 @@
 
 - [x] Render a basic scene (ground, sky, lights) in a `<Canvas>`
 - [x] Build a third-person character controller (walk, run, jump) with Rapier
-- [ ] Add a follow camera with collision so it doesn't clip through walls
+- [x] Add a follow camera with collision so it doesn't clip through walls
 - [x] Add keyboard controls, plus a virtual joystick for touch
 - [x] Set up the Zustand store (player stats, cash, inventory, time, missions)
 - [x] Add an in-game pause menu and settings (graphics quality: low/medium/high)

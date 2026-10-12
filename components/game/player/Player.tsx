@@ -6,7 +6,7 @@ import { CapsuleCollider, RigidBody, RapierRigidBody } from "@react-three/rapier
 import * as THREE from "three";
 import { useKeyboardInput } from "./useKeyboardInput";
 import { input } from "@/lib/input";
-import { playerPosition } from "@/lib/playerRef";
+import { playerPosition, playerBody } from "@/lib/playerRef";
 import { PLAYER } from "@/lib/constants";
 
 const forward = new THREE.Vector3();
@@ -23,6 +23,7 @@ export default function Player() {
   useFrame(() => {
     const rb = body.current;
     if (!rb) return;
+    playerBody.current = rb;
 
     // Movement relative to the camera's facing direction
     camera.getWorldDirection(forward);

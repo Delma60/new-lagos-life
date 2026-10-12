@@ -10,6 +10,9 @@ export const PLAYER = {
 export const CAMERA = {
   offset: [0, 3.5, 7] as const,
   lerp: 0.1,
+  pivotHeight: 1,
+  collisionMargin: 0.3,
+  minDistance: 0.8,
 };
 
 export const QUALITY = {
@@ -23,3 +26,13 @@ export const PERFORMANCE_BUDGET = {
   playableSecondsOn4G: 5,
   targetFpsOnMidRangeAndroid: 30,
 } as const;
+
+// A full 24h day takes 10 real minutes
+export const TIME = {
+  hoursPerSecond: 24 / 600,
+  tickSeconds: 0.25,
+};
+
+export const TRAFFIC = { speed: 6 }; // m/s, same for all vehicles
+
+export const NPC_TALK_RADIUS = 3;
