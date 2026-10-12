@@ -8,20 +8,20 @@
 
 ## Phase 0: Setup and Performance Budget
 
-- [ ] Create a Next.js (App Router) + TypeScript project
-- [ ] Install `three`, `@react-three/fiber`, `@react-three/drei`, `@react-three/rapier`, `zustand`
-- [ ] Set a performance budget (see above)
+- [x] Create a Next.js (App Router) + TypeScript project
+- [x] Install `three`, `@react-three/fiber`, `@react-three/drei`, `@react-three/rapier`, `zustand`
+- [x] Set a performance budget (see above)
 - [ ] Add a stats overlay (`r3f-perf` or `stats.js`) and test on a real low-end phone from day one
-- [ ] Load the game canvas with `next/dynamic` (`ssr: false`) so the landing page stays light
+- [x] Load the game canvas with `next/dynamic` (`ssr: false`) so the landing page stays light
 
 ## Phase 1: Core Engine
 
-- [ ] Render a basic scene (ground, sky, lights) in a `<Canvas>`
-- [ ] Build a third-person character controller (walk, run, jump) with Rapier
+- [x] Render a basic scene (ground, sky, lights) in a `<Canvas>`
+- [x] Build a third-person character controller (walk, run, jump) with Rapier
 - [ ] Add a follow camera with collision so it doesn't clip through walls
-- [ ] Add keyboard controls, plus a virtual joystick for touch
-- [ ] Set up the Zustand store (player stats, cash, inventory, time, missions)
-- [ ] Add an in-game pause menu and settings (graphics quality: low/medium/high)
+- [x] Add keyboard controls, plus a virtual joystick for touch
+- [x] Set up the Zustand store (player stats, cash, inventory, time, missions)
+- [x] Add an in-game pause menu and settings (graphics quality: low/medium/high)
 
 ## Phase 2: One City Block (Vertical Slice)
 
